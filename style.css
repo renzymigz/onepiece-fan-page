@@ -1,0 +1,662 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* welcome to my unorganized CSS code ahahahaha  :DDDDDDDDDDDDDDDDDDDDDDDDDDDDD */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(images/background-cover-backup.jpg);
+    background-repeat: repeat;
+    background-size: 25em;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+    position: relative; 
+}
+
+.text-header{
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.navbar {
+    box-shadow: 0 5px 0 rgb(0, 0, 0), 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+}
+
+.navbar ul{
+    list-style-type:none;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    height: 80px;
+}
+
+.navbar a{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.navbar a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* ------------------------------ MAIN BOX PART OF THE WEBSITE ------------------------------ */
+
+#section-1 {
+    height: 760px;
+    width: 1515px;
+    display: block;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 0px 0px 20px;
+ 
+}
+
+#section-2{
+    height: 1400px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 1515px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px;
+    position: relative;
+}
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#black-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%) rotate(3deg);
+    position: absolute;
+    height: 510px; 
+    width: 1000%;
+    background-color: black;
+    overflow: hidden;
+  }
+
+#black-box2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%) rotate(-3deg);
+    position: absolute;
+    height: 510px; 
+    width: 200%;
+    background-color: black;
+    overflow: hidden;
+  }
+
+#section-3{
+    height: 2000px;
+    background-color: rgb(226, 225, 225);
+    display: block;
+    width: 1515px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px;
+}
+
+#section-4{
+    height: 1800px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    width: 1515px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px;
+}
+
+#section-5{
+    height: 1500px;
+    background-color: rgb(226, 225, 225);
+    display: block;
+    width: 1515px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px;
+}
+
+#section-6{
+    height: 910px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin: 0px auto;
+    width: 1515px;  
+    box-shadow: 0px 0px 20px;
+    box-sizing: border-box;
+}
+/* ------------------------------ BLACK BOX CUSTOMIZATION ------------------------------*/
+.manga-image-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-88%, -65%);
+    position: absolute;
+}
+
+
+.manga-image-container img {
+    width: 64%;
+    height: auto;
+    box-shadow: 0 0 0 2px black, 0 0 0 5px white
+}
+
+
+.manga-image-container2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, -75%);
+    position: absolute;
+}
+
+.manga-image-container3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -65%);
+    position: absolute;
+}
+
+.manga-image-container2 img {
+    width: 60%;
+    height: auto;
+    box-shadow: 0 0 0 2px black, 0 0 0 5px white
+}
+
+.manga-image-container3 img {
+    width: 60%;
+    height: auto;
+    box-shadow: 0 0 0 2px black, 0 0 0 5px white
+}
+
+.overlay-text-3{
+    transform: translate(47%, -100%);
+    font-size: 6em;
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 6px 0px rgb(141, 141, 141), 0 0 20px black;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.overlay-text-4 {
+    position: absolute;
+    left: 30%;
+    float: left;
+    transform: translate(-50%, -100%);
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 6px 0px rgb(141, 141, 141), 0 0 20px black;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+/* ------------------------------ HEAD TITLES CUSTOMIZATION ------------------------------*/
+
+.section-title {
+    text-align: center; 
+    margin: 0;
+    padding: 50px; 
+}
+
+@keyframes blink{
+    0%, 49% {opacity: 1;}
+    50%, 100% {opacity: 0;}
+}
+.blink {
+    animation: blink 1s infinite;
+}
+
+/* ------------------------------ HOME ------------------------------ */
+
+.home-introduction{
+    text-align: center;
+}
+
+.home-introduction h2{
+    position: absolute;
+    
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    text-align: center;
+    font-size: 15em;
+    color: rgb(255, 255, 255);
+    text-shadow: 8px 8px 0px rgb(0, 0, 0), 0 0 20px black;
+}
+
+.overlay-text-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, 40%);
+    text-align: center;
+    font-size: 3.5em;
+    color: rgb(255, 228, 23);
+    text-shadow: 8px 8px 0px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.home-introduction hr{
+    width: 90%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    border-width: 3px;
+    border-color: black;
+}
+
+.home-introduction p{
+    padding: 50px;
+}
+
+.background-home{
+    position: relative;
+}
+
+.background-home img{
+    width: 100%;
+    height: auto;
+    filter: brightness(80%);
+}
+
+#luffySitting{
+    width: 30em;
+    position: absolute;
+    top: 180px;
+    z-index: 2;
+}
+
+#luffySitting:hover{
+    animation: shake 1s infinite;
+}
+
+/* ------------------------------ ABOUT ME ------------------------------ */
+
+.aboutme-introduction{
+    margin-left: 5%;
+}
+
+.story{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 3em;
+}
+
+.container-about{
+    width: 600px;
+    margin: 50px 50px 0 100px;
+    padding: 40px;
+    border: black solid 2px;
+}
+
+.container-about2{
+    width: 600px;
+    margin: 50px 50px 0 0;
+    padding: 40px;
+    border: black solid 2px;
+}
+
+.container-about h2, .container-about2 h2{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+.moreInfo{
+    background-color: black;
+    color: white;
+    border-style: none;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    cursor:pointer;
+    border: transparent solid 2px;
+    transition: background-color 0.08s ease-in-out;
+    font-weight: 500;
+}
+
+.moreInfo:hover{
+    background-color: white;
+    color: black;
+    border: black solid 2px;
+}
+
+.aboutme-image-container{
+    position: absolute;
+    z-index: 2;
+}
+
+#ryuma{
+    transform: translate(350%, -250%);
+    width: 11em;
+}
+
+#luffy{
+    transform: translate(85%, -150%);
+    width: 20em;
+}
+
+#manga{
+    transform: translate(60%, -120%);;
+    width: 34em;
+    filter: drop-shadow(0px 0px 20px rgb(122, 122, 122));
+}
+
+.moreInfo:hover .aboutme-image-container{
+    transform: scale(1.1);
+}
+/* lowkey borrowed this keyframe code sa w3schools, thankz and probs to them, kay ganahan rako mo test sa funny animation :ppp (im lazy to make my own keyframe anim for it)*/
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-4px, 2px) rotate(1deg); }
+    60% { transform: translate(6px, -2px) rotate(0deg)}
+    70% { transform: translate(-1px, -2px) rotate(-1deg); }
+    80% { transform: translate(-3px, 0px) rotate(1deg); }
+    90% { transform: translate(3px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -1px) rotate(1deg); }
+  }
+
+section{
+    width: 80%;
+    float:left;
+    padding: 50px;
+}
+
+section h2{
+    font-size: 3em;
+}
+
+section p{
+    text-justify: inter-character;
+}
+
+/* ------------------------------ SHOW  ------------------------------ */
+
+.box-titles{
+    margin-left: 5%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 3em;
+}
+.anime-line{
+    width: 90%;
+    display: relative; 
+    margin: 0 auto;
+    border-width: 1.5px;
+    border-color: rgb(0, 0, 0);
+}
+
+.anime-container img{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: filter 0.1s ease-in-out;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.anime-container{
+    padding: 50px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.headerAnime{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+    border-radius: 15px;
+    margin: 2% 5% 2% 5%;
+}
+
+.anime-card{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 1003px;
+    height: auto;
+    font-size: 2em;
+    color: white;
+    margin: 10px 25px 0px 25px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px rgb(255, 255, 255), 12px 12px 0px rgb(0, 0, 0), 0px 0px 20px rgb(138, 138, 138);
+    transition: transform 0.1s ease-in-out;
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+.anime-card:hover{
+    transform: scale(1.05);
+    box-shadow: 6px 6px 0px rgb(255, 255, 255), 12px 12px 0px rgb(0, 0, 0), 0px 0px 20px rgb(33, 33, 33);
+}
+.watch-card-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-card {
+    width: 440px;
+    height: 90px;
+    background-color: white;
+    border: black solid 2px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: transform 0.12s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.watch-card h2{
+    padding: 22px;
+}
+
+.watch-card:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+}
+
+.watch-card-container a{
+    color: inherit;
+    text-decoration: none;
+}
+.liveactionBox{
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    flex-direction: column;
+}
+
+.liveaction-container {
+    width: 500px;
+    height: 100%;
+    border: black solid 2px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.liveaction-container img{
+    width: 500px;
+    padding: 70px;
+    transition: transform 0.12s ease-in-out, filter 0.12s ease-in-out;
+    justify-content: center;
+}
+
+.liveaction-container:hover img{
+    transform: scale(1.1);
+    filter: brightness(200%);
+}
+
+.netflix-container img{
+    width: 200px;
+
+}
+/* ------------------------------ POPULARITY CHARS ------------------------------ */
+
+.popularity-container{
+    margin: 5%;
+}
+
+li{
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+.points{
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.popularity-image-container{
+    position: absolute;
+    z-index: 2;
+}
+
+#luffychar{
+    transform: translate(300%, -180%);
+    width: 15em;
+    border: black solid 2px;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255), rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;;
+}
+
+#zorochar{
+    width: 15em;    
+    transform: translate(280%, -180%);
+    border: black solid 2px;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255), rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#namichar{
+    width: 16em;
+    transform: translate(240%, -190%);
+    border: black solid 2px;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255), rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* ------------------------------ CONTACTS ------------------------------ */
+
+.twitter-timeline{
+    margin: 0;
+    padding: 0px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.social-info-container{
+    margin: 2%;
+    display: flex;
+    justify-content: center;    
+}
+.contact-line{
+    width: 90%;
+    margin: 0 auto;
+    border-width: 3px;
+    border-color: black;
+}
+
+/* ------------------------------ FOOTER  ------------------------------ */
+footer {
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    display: block;
+   
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    font-size: 13px;
+    z-index: 3;
+}
+
+.footer-wrapper h2{
+    padding: 10px;
+}
+.footer-wrapper{
+    padding: 20px;
+}
+
+.footer-wrapper p{
+    padding-left: 10px;
+}
+
+.social-media-icons{
+    float: right;
+   
+}
+
+.social-media-icons i{
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.1s ease-in-out;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.social-media-icons i:hover{
+    transform: scale(1.25);
+}
+/* ------------------------------ DISPLAY CUSTOMIZATION ------------------------------ */
+@media screen and (max-width: 1000px){
+    #section-3{
+        overflow-y: scroll;
+    }
+
+
+    #section-5{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    #section-6{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+}
